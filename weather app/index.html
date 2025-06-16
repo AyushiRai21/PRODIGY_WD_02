@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Great+Vibes&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="designo-navbar">
+        <div class="nav-logo">Designo</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger-menu" aria-label="Open navigation" tabindex="0">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+    <section class="hero-designo" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content-designo">
+            <h1>
+                <span class="serif">MATERIAL.</span><br>
+                <span class="script">MEANING.</span><br>
+                <span class="serif">MOOD.</span>
+            </h1>
+            <p class="subheadline">Söl Haus is a boutique interior design studio creating light-filled, emotionally resonant spaces with purpose and depth.</p>
+            <a href="#contact" class="designo-btn">GET IN TOUCH <span class="arrow">&rarr;</span></a>
+        </div>
+    </section>
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <h2>About Designo</h2>
+            <p>At Designo, we believe in the power of thoughtful design to transform spaces and lives. Our team crafts interiors that blend material, meaning, and mood—creating environments that inspire and comfort.</p>
+        </div>
+    </section>
+    <section class="services-section" id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <a href="#" class="service-card">
+                <div class="service-title">Interior Design</div>
+                <div class="service-desc">Bespoke interiors tailored to your lifestyle and vision.</div>
+            </a>
+            <a href="#" class="service-card">
+                <div class="service-title">Space Planning</div>
+                <div class="service-desc">Optimizing layouts for beauty, comfort, and function.</div>
+            </a>
+            <a href="#" class="service-card">
+                <div class="service-title">Consultation</div>
+                <div class="service-desc">Expert advice to elevate your space, in person or virtually.</div>
+            </a>
+        </div>
+    </section>
+    <section class="portfolio-section" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <a href="#" class="portfolio-item"><img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=400&q=80" alt="Project 1"><span>Modern Living</span></a>
+            <a href="#" class="portfolio-item"><img src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80" alt="Project 2"><span>Serene Bedroom</span></a>
+            <a href="#" class="portfolio-item"><img src="https://images.unsplash.com/photo-1503389152951-9c3d8e1e8d3e?auto=format&fit=crop&w=400&q=80" alt="Project 3"><span>Elegant Workspace</span></a>
+            <a href="#" class="portfolio-item"><img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Project 4"><span>Cozy Nook</span></a>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="designo-btn">Send Message <span class="arrow">&rarr;</span></button>
+        </form>
+    </section>
+    <footer class="designo-footer">
+        <div class="footer-content">
+            <div>© 2024 Designo. All rights reserved.</div>
+            <div class="footer-socials">
+                <a href="#" aria-label="Instagram">&#x1F4F7;</a>
+                <a href="#" aria-label="Pinterest">&#x1F4C1;</a>
+                <a href="#" aria-label="LinkedIn">&#x1F465;</a>
+            </div>
+        </div>
+    </footer>
+    <button id="backToTopBtn" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+</body>
+</html> 
