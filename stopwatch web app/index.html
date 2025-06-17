@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="nav-link active">Stopwatch</a>
+        <a href="#" class="nav-link">SavedLaps</a>
+        <a href="#" class="nav-link">About</a>
+    </nav>
+    <div class="container">
+        <div class="stopwatch">
+            <div class="display">
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>:
+                <span id="milliseconds">00</span>
+            </div>
+            <div class="controls">
+                <button id="startBtn" class="btn">Start</button>
+                <button id="pauseBtn" class="btn">Pause</button>
+                <button id="resetBtn" class="btn">Reset</button>
+                <button id="lapBtn" class="btn">+Lap</button>
+                <button id="clearLapsBtn" class="btn">ClearLaps</button>
+            </div>
+            <div class="laps-container">
+                <button id="saveLapsBtn" class="btn save-laps-btn">Save laps</button>
+                <table class="laps-table">
+                    <thead>
+                        <tr>
+                            <th>Lap</th>
+                            <th>Total Time</th>
+                            <th>Lap Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lapsList">
+                        <!-- Lap times will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 2rem;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #f1c40f;
+    border-bottom: 2px solid #f1c40f;
+}
+
+.stopwatch {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.display {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: white;
+    color: #2c3e50;
+    min-width: 100px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#startBtn {
+    background: #2ecc71;
+    color: white;
+}
+
+#pauseBtn {
+    background: #e74c3c;
+    color: white;
+}
+
+#resetBtn {
+    background: #f1c40f;
+    color: white;
+}
+
+#lapBtn {
+    background: #3498db;
+    color: white;
+}
+
+#clearLapsBtn {
+    background: #c0392b;
+    color: white;
+}
+
+.laps-container {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.save-laps-btn {
+    margin-bottom: 1rem;
+    background: #9b59b6;
+    color: white;
+}
+
+.laps-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.laps-table th,
+.laps-table td {
+    padding: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.laps-table th {
+    background: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.laps-table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.laps-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.15);
+} 
